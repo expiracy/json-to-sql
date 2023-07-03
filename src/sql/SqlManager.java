@@ -2,10 +2,10 @@ package sql;
 
 import java.sql.*;
 
-public class SQL {
+public class SqlManager {
     private Connection connection;
 
-    public SQL(String url) throws SQLException {
+    public SqlManager(String url) throws SQLException {
         this.connection = DriverManager.getConnection(url);
     }
 
